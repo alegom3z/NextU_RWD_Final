@@ -1,0 +1,274 @@
+/* ---  GENERIC  --- */
+body {
+	font-family: 'Dancing Script', cursive;
+	background-color: #02010a;
+}
+
+img {
+	box-shadow: 2px 2px #02010a;
+}
+
+#contenido {
+	align-content: center;
+}
+
+@media screen and (max-width: 900px) {
+	#contenido {
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+
+
+/* ---   HEADER  --- */
+header {
+	background-color: #5b7989;
+	color: white;
+	text-shadow: 2px black;
+	display: block;
+	width: 100%;
+	height: 10%;
+	border-radius: 10px 10px 0px 0px;
+	overflow: auto;
+	}
+
+#cabecera h3 {
+	float: left;
+	padding: 2px;
+}
+
+#cabecera a {
+	float: right;
+	padding: 3vh;
+}
+
+/*  Links  */
+a {
+	color: white;
+	text-decoration: none;
+}
+
+figure a {
+	color: black;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+
+/* ---------------   INDEX   --------------- */
+/* ---  IMAGES   --- */
+/*  Main Image  */
+#mainImage {
+	background-color: #82c3a6;
+	overflow: auto;
+}
+
+#mainImage img {
+	width: 90%;
+	display: block;
+	margin: 2rem auto 2rem auto; 
+}
+
+@media all (max-width: 900px) {
+	#mainImage img {
+		width: 100%;
+		display: block;
+		margin-left: 0 auto;
+	}
+}
+
+/*  Secondary Images  */
+#secondImage {
+	width: 100%;
+	background-color: #d5c75f;
+	overflow: auto;
+	border-top: 0px;
+  	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-content: space-between;
+}
+
+#secondImage > figure {
+	width: 33.33%;
+	margin-top: 2.5%;
+	margin-bottom: 2.5%;
+}
+
+.limay {
+	width: 100%;
+	float: left;
+	border: 1px solid black;
+	transition: rotate, shadow, border, 1s;
+}
+
+.limay:hover {
+	transform: rotate(10deg);
+	box-shadow: 3px 3px 3px #82c3a6;
+	border: 2px solid black;
+}
+
+
+.tren {
+	width: 100%;
+	float: right;
+	border: 1px solid black;
+	order: 2;
+	transition: translate, shadow, 1s;
+}
+
+.tren:hover {
+	transform: translate(20px, -5px);
+	border: 2px solid black;
+	box-shadow: 3px 3px 3px #82c3a6;
+}
+
+figcaption {
+	text-align: center;
+}
+
+@media all (max-width: 900px) {
+	figure .limay {
+		width: 90%;
+	}
+
+	figure .tren {
+		width: 90%;
+	}
+}
+
+
+/* ---------------   PAISAJES   --------------- */
+/* ---  CONTENIDO   --- */
+
+.colL {
+	width: 33.33%;
+	float: left;
+	background-color: #d5c75f;
+
+}
+
+.colL img {
+	width: 80%;
+	margin: 1vh auto;
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.colC {
+	width: 33.33%;
+	float: left;
+	background-color: #d5c75f;
+}
+
+.colC img {
+	width: 80%;
+	margin: 1vh auto;
+
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.colR {
+	width: 33.33%;
+	float: right;
+	background-color: #d5c75f;
+}
+
+.colR img {
+	width: 80%;
+	margin: 1vh auto;
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+/*   Efectos   */
+.img1 {
+	-webkit-filter: blur(10px);
+	filter: blur(10px);
+}
+
+.img2, .img4, .img6 {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+.img3 {
+	-webkit-filter: sepia(90%);
+	filter: sepia(90%);
+}
+
+/* Media Queries */
+@media screen and (max-width: 900px) {
+	.colL {
+		width: 100%;
+		order: 1;
+	}
+
+	.colC {
+		width: 100%;
+		order: 1;
+	}
+
+	.colR {
+		width: 100%;
+		order: 1;
+	}
+}
+
+/* ---  FOOTER   --- */
+footer {
+	background-color: #c6d5c5;
+	overflow: auto;
+	border-radius: 0px 0px 10px 10px;
+	width: 100%;
+	font-size: 1.2em;
+}
+
+.col3 a {
+	color: black;
+}
+
+#container {
+	width: inherit;
+	text-align: center;
+}
+
+.col1 {
+	width: 25%;
+	float: left;
+}
+.col2 {
+	width: 25%;
+	float: left;
+}
+.col3 {
+	width: 25%;
+	float: left;
+}
+.col4 {
+	width: 25%;
+	float: right;
+} 
+
+@media screen and (max-width: 900px) {
+	.col1 {
+		width: 100%;
+		order: 4;
+	}
+	.col2 {
+		width: 100%;
+		order: 2;
+	}
+	.col3 {
+		width: 100%;
+		order: 1;
+	}
+	.col4 {
+		width: 100%;
+		order: 3;
+	}
+}
+
